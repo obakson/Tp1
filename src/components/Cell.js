@@ -39,7 +39,7 @@ class Cell extends React.Component
     onMouseOver={() => this.setState({isOver: true})}
     onMouseOut={() => this.setState({isOver: false})}
     onClick={() => this.props.onClick()} 
-    style={this.state.isOver ? cellStyleOut: cellStyle}>x</div>;
+    style={this.state.isOver ? cellStyleOut: cellStyle}> { this.props.c } </div>;
   }
 }
 
